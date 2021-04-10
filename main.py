@@ -67,9 +67,7 @@ def send_text(text):
     data = {'chat_id': TELEGRAM_CHAT_ID,
             'text': text}
     r = requests.post(url, data=data)
-    print(r.status_code, r.text)
-    import pdb
-    pdb.set_trace()
+
     return r.status_code
 
 main()
